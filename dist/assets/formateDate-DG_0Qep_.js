@@ -1,0 +1,1 @@
+const t=e=>{if(!e)return"-";try{const r=new Date(e);return isNaN(r.getTime())?"-":r.toLocaleString("en-US",{year:"numeric",month:"long",day:"numeric",hour:"2-digit",minute:"2-digit"})}catch(r){return console.error("Error formatting date:",r),"-"}};export{t as f};
