@@ -1,4 +1,4 @@
-name: Deploy to Droplet production
+name: Deploy to Droplet staging
 
 on:
   workflow_dispatch:
@@ -19,7 +19,7 @@ jobs:
           script: |
             set -e
 
-            cd /var/www/html/shipment/production
+            cd /var/www/html/shipment/staging
 
             git pull origin main
 
