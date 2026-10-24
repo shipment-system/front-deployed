@@ -21,7 +21,7 @@ jobs:
 
             cd /var/www/html/shipment/staging
 
-            git pull origin main
+            git pull --ff-only origin staging
 
             sudo systemctl restart nginx
 
